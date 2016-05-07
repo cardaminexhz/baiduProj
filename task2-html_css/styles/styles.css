@@ -1,0 +1,77 @@
+body {
+    background-color: #DEDEDE;
+}
+
+/*<!-- TODO: 边框 -->*/
+div.article {
+    background-color: #FFFFFF;
+
+    border-style: outset;
+    border-top: solid 1px #CACACA;
+    border-left: solid 1px #CACACA;
+
+    padding: 25px 45px;
+    margin: 22px;
+}
+
+.article.authorInfo {
+    color: #857868;
+}
+
+p {text-indent: 0.9cm}
+
+div.img
+{
+    margin:3px;
+    border:1px solid #bebebe;
+    height:auto;
+    width:auto;
+    float:left;
+    text-align:center;
+}
+div.img img
+{
+    display:inline;
+    margin:3px;
+    border:1px solid #bebebe;
+}
+div.img a:hover img
+{
+    border:1px solid #333333;
+}
+div.imgDesc
+{
+    text-align:center;
+    font-weight:normal;
+    width:150px;
+    font-size:12px;
+    margin:10px 5px 10px 5px;
+}
+
+dl.img
+{
+    margin:3px;
+    border:1px solid #bebebe;
+    height:auto;
+    width:auto;
+    float:left;
+    text-align:center;
+}
+dl.img img
+{
+    display:inline;
+    margin:3px;
+    border:1px solid #bebebe;
+}
+dl.img a:hover img
+{
+    border:1px solid #333333;
+}
+dl.imgDesc
+{
+    text-align:center;
+    font-weight:normal;
+    width:150px;
+    font-size:12px;
+    margin:10px 5px 10px 5px;
+}
