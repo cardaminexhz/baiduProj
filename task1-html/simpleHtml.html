@@ -126,28 +126,29 @@
     <form>
         <div>
             <p>
-            请输入邮箱地址：
-            <input type="text" name="email" placeholder="这是一个文本输入框" />
+            <!-- "for" 属性可把 label 绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值。 -->
+            <label for="email">请输入邮箱地址：</label>
+            <input type="text" id="email" name="email" placeholder="这是一个文本输入框" />
             </p>
             <p>邮箱地址请按要求格式输入</p>
         </div>
         <div>
             <p>
-            请输入密码：
-            <input type="password"name="pswd" placeholder="这是一个文本输入框" />
-            请重复输入密码：
-            <input type="password"name="pswd" placeholder="这是一个文本输入框" />
+            <label for="pswd">请输入密码：</label>
+            <input type="password" id="pswd" name="pswd" placeholder="这是一个文本输入框" />
+            <label for="pswdRepeat">请重复输入密码：</label>
+            <input type="password" id="pswdRepeat" name="pswdRepeat" placeholder="这是一个文本输入框" />
             </p>
             <p>密码请为6-16位英文数字</p>
         </div>
 
         <div>
-            性别：
+            <label>性别：</label>
             <input type="radio" name="sex" value="male" />男
             <input type="radio" name="sex" value="female" />女
 
             <!-- 下拉列表框 -->
-            城市：
+            <label>城市：</label>
             <select name="city">
                 <optgroup label="上海">
                     <option value="shanghai">上海</option>
@@ -165,13 +166,13 @@
                 </optgroup>
             </select>
 
-            爱好：
+            <label>爱好：</label>
             <input type="checkbox" name="hobies" value="exercise" />运动
             <input type="checkbox" name="hobies" value="art" />艺术
             <input type="checkbox" name="hobies" value="science" />科学
 
             <!-- 多行输入框 -->
-            个人描述：
+            <label>个人描述：</label>
             <textarea rows="2" cols="30">
                 这是一个多行输入框，输入您的个人描述
             </textarea>
