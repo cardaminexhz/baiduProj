@@ -1,9 +1,9 @@
-body, #left, #center, #right {
+#content, #left, #center, #right {
     border: solid 1px #999;
     padding: 20px;
 }
 
-body {
+#content {
     background-color: #eee;
     margin: 20px;
     /* 1.默认情况下（不设置height），或者设height:auto，2.或者子元素不全是float，父元素即可自动适应内部高度 */
@@ -24,11 +24,12 @@ body {
 
 #left {
     float: left;
-    width: 200px;
-    margin-right: -200px;
+    width: 160px;
+    margin-right: -160px;
 }
 #left span {
     float: right;       /*文字居于右上角*/
+    width: 60px;        /*限制文字宽度，保持间距*/
 }
 
 #right {
@@ -39,12 +40,15 @@ body {
 #right img {
     width: 80px;
     height: 80px;
-    padding: 0 0 20px 0 ;   /*img 上下间距*/
+    margin-bottom: 20px;     /*img 上下间距*/
+}
+#right img.lastImg {
+    margin-bottom: 0;        /*因img的父元素right存在padding, 所以最后一个img的margin-bottom设为0*/
 }
 
 #center {
     width: auto;
-    margin: 0 142px 0 262px;
+    margin: 0 142px 0 222px;
 }
 
 .footer {
