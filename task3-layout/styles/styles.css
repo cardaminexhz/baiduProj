@@ -6,6 +6,7 @@
 #content {
     background-color: #eee;
     margin: 20px;
+    min-width: 600px;
     /* 1.默认情况下（不设置height），或者设height:auto，2.或者子元素不全是float，父元素即可自动适应内部高度 */
     /* overflow 默认值：visible, 适用于：块容器，伸缩盒容器，grid容器
     visible：
